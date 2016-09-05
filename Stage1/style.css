@@ -1,5 +1,5 @@
 
-*{
+body {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -21,7 +21,7 @@
 
 .header {
 	background-color: #90c3d4;
-	color: #FFF;
+	color: #fff;
 	text-align: center;
 	border-radius: 10px;
 	margin: 10px;
@@ -41,7 +41,7 @@
 }
 
 .content-title {
-	color: #FFF;
+	color: #fff;
 	background-color: #90c3d4;
 	border-radius: 5px;
 	padding: 5px;
@@ -70,7 +70,7 @@
 }
 
 h3 {
-	color: #FFF;
+	color: #fff;
 }
 
 h4 {
