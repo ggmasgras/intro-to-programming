@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Georgiana's Notes</title>
+        <link rel="stylesheet" href="style.css">
+        <h1 id="top" class='title'>The Basics of the Web</h1>
+    </head>
+        
+    <body>
+
+        <div class="header">
+            <h2>Table of Contents</h2>
+        </div>
+
+        <div class="content-list">
+            <ul>
+                <li><a href="#pieces">Major Pieces of the Web</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#devtools">Developer Tools & Box Model Design</a></li>
+                <li><a href="#http">HTTP</a></li>
+
+                <!-- This is a portion of my notes I plan to build on as the course progresses
+                <li>URLs</li>
+                <li>web applications</li>
+                -->
+                </ul> 
+
+        </div>
+
+        <hr/>
+
+        <div class="content">
+            <h2 class="content-title" id="pieces">1. Major Pieces of the Web</h2>
+
+            <div class="content-description">
+
+                <ul>
+                    <li>you &amp; your computer + browser (IE, Chrome, Firefox, Safari, etc.)</li>
+                    <li>the Internet</li>
+                    <li>servers</li>
+                </ul>
+
+            <p>Your computer browser <span class="italic">makes a request</span> over the internet to the servers using the <span class="italic">HTTP protocol</span>, and the servers respond back via the internet. Servers are like computers, just optimized for sitting in a closet, hosting files.</p>
+
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="content">
+            <h2 class="content-title" id="html">2. HTML</h2>
+
+            <div class="content-description">
+
+                <p>HTML stands for <span class="bold">Hypertext Markup Language</span> and represents the basis of almost every web page. HTML is what glues everything together and HTML documents are the "heart" of the web.</p>
+
+                <p>HTML is made up of:</p>
+
+                    <ul>
+                        <li><span class="bold">text content</span> &mdash; what you see</li>
+                        <li><span class="bold">markup</span> &mdash; what is looks like</li>
+                        <li><span class="bold">references to other documents</span> &mdash; e.g. images &amp; video</li>
+                        <li><span class="bold">links to other pages</span></li>
+                    </ul>
+                
+            </div>
+
+            <div class="content-category">
+
+                <h3>HTML Attributes</h3>
+
+                <div class="content-detail">
+
+                    <h4>Anchors</h4>
+
+                    <p>An anchor is used for creating links. They include:</p>
+                        <ul>
+                            <li><span class="bold">href</span> &mdash; attribute name</li>
+                            <li><span class="bold">link</span> &mdash; the value (i.e. <a href="www.reddit.com" target="_blank">www.reddit.com</a> )</li>
+                        </ul>
+                    
+                </div>
+
+                <div class="content-detail">       
+
+                    <h4>Image tags</h4> 
+
+                    <p>An image tag is used to embed images on the web page. The tag includes:</p>
+
+                        <ul>
+                            <li><span class="bold">img opening/closing tags</span></li>
+                            <li><span class="bold">source (src)</span></li>
+                            <li><span class="bold">alt (alternate)</span> - text that displays when the image doesn't load &mdash; <span class="bold">REQUIRED</span></li>
+                        </ul>
+
+                    <p><span class="bold">Image tags</span> are called <span class="bold">void</span> tags and are inline elements; they have no content and thus require no closing tag. <span class="bold">Break</span> is also a void tag, used for line breaks.</p>
+
+                    <p>The break tag is an inline tag; it is ending a line ("the line ends here"). Other inline elements are the <span class="bold">bold tag</span>, and the <span class="italic">emphasis tag</span>.</p>
+
+                    <p>The <span class="bold">paragraph tag</span> <span class="italic">is NOT</span> a void tag; it creates a box around the content so it needs a closing tag. The paragraph p tag is a block as well, as it creates an 'invisible' box around the text. This box can have height and width--which can be customized, as opposed to the break tag, for example, that only ends the line.</p>
+                </div>
+
+                <div class="content-detail">
+
+                    <h4>Boxes &amp; Containers</h4>
+
+                    <p>Elemens such as Span &amp; Div are used to create boxes and containers on an HTML page.</p>
+
+                    <p><span class="bold">Span</span> is an inline element creating an inline container element.</p> 
+
+                    <p><span class="bold">Div</span> is a block element creating a 'box' container element. These elements do not do anything other than contain their content. There is a way to attach styling elements to them to influence the way in which they are displaying.</p>
+
+                </div>
+            </div>
+
+            <div class="content-category">
+                <h3>HTML Document</h3>
+
+                <div class="content-detail">
+                    <p>An HTML document include the following elements:</p>
+
+                        <ul>
+                            <li>doctype</li>
+                            <li>HTML tag - encompasses all the content on the page</li>
+                            <li>Head tag - includes info such as metadata, Java script, CSS, as well as the title tag with the title of the page</li>
+                            <li>Body tag - includes the content of the document</li>
+                        </ul>    
+                </div>
+
+            </div>
+
+        </div>
+
+            <p><a class="top-link" href="#top">Back to top</a></p>
+
+            <hr/>
+
+            <div class="content">
+
+                <h2 class="content-title" id="css">3. CSS</h2>
+
+                <div class="content-description">
+
+                    <p>CSS stands for Cascading Style Sheets and is a stylesheet language used for describing the look and formatting of a document written in a markup language.</p>
+
+                    <p>CSS is a collection of rules in which order matters. A key concept of CSS is most specific rule applied.</p>
+
+                </div>
+
+                <div class="content-category">
+
+                    <h3>Order Matters</h3>
+
+                    <div class="content-detail">
+
+                        <p>Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:</p>
+
+                            <ul>
+                                <li>the detault style of the browser (different browsers have different styles)</li>
+                                <li>stylesheet in a separate file (most common)</li>
+                                <li>stylesheet in inside HTML (can be done for small projects, but not ideal)</li>
+                                <li>inline style in an element (should be avoided)</li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="content-category">
+
+                    <h3>Specifics Matter</h3>
+
+                    <div class="content-detail">
+
+                        <p>Cascading means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, <span class="bold">the more specific rule takes effect</span>.</p>
+
+                    </div>
+                </div>
+
+                <div class="content-category">
+
+                    <h3>CSS Selectors</h3> 
+
+                    <p style="color:#FFF"><small><span class="italic">See full article at <a style="color:#FFF" 
+                    href="https://css-tricks.com/how-css-selectors-work/" target="_blank">css-tricks.com/how-css-selectors-work</a></span></small></p>
+
+                    <div class="content-detail">
+
+                        <h4>ID Selector</h4>
+
+                        <p><span class="bold">ID selectors</span> are the most <span class="bold">powerful</span> type of selector in terms of CSS specificity. They <span class="italic">outweigh</span> other types of selectors and the styles defined within override other styles.</p>
+
+                        <p>However, keep in mind that it is better to have lower-specificity selectors that are easier to override when needed.</p>
+                    </div>
+
+                    <div class="content-detail">
+
+                        <h4>Class Selector</h4>
+
+                        <p>Class selectors are probably the most useful and versatile selectors, and they are well supported in all browsers. You can also add multiple classes (just separated by a space) on HTML elements. There are also Javascript commands you can implement to specifically manipulate classes.</p>
+                    </div>
+
+                    <div class="content-detail">
+
+                        <h4>Tag Selectors</h4>
+
+                        <p>Tag selectors are most useful when changing properties that are unique to that HTML element. Examples include setting the 'list-style' on a ul element or 'tab-size' on a pre. </p>
+
+                        <p>However, it is tipically more useful to have a class define styling that you can use on any HTML element.</p>
+                    </div>
+
+                    <div class="content-detail">
+
+                        <h4>Attribute Selector</h4>
+
+                        <p>Attribute selectors are arguably more useful than classes because they have the same specificity value, but can be any attribute, not just 'class,' plus they can have a value you can select by.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p><a class="top-link" href="#top">Back to top</a></p>
+
+            <hr/>
+
+            <div class="content">
+
+            <h2 class="content-title" id="devtools">4. Developer Tools & The Box Model Design</h2>
+
+            <div class="content-description">
+                <p>All web pages can be broken down into boxes, from the biggest box containing the whole page to smaller boxes within containing the different elements of the page.</p>
+
+                <p>Chrome Developer Tools (DevTools) are a set of web authoring and debugging tools built into Chrome. Using DevTools we can easily explore the Box Model Design that stands at the core of front end web design.</p>
+            </div>
+
+            <div class="content-category">
+
+                <h3>Defining Boxes in HTML</h3>
+
+                <div class="content-detail">
+
+                    <h4>Div Tags</h4>
+
+                    <p>Div tags are used in order to define individual boxes. Since boxes can contain other boxes, hence div tags can contain other div tags.</p>
+
+                    <p>Div tags can be given a 'class' attribute, which functions like a label on a box, and can be used to define the style of the box.</p>
+
+                    <p>A key concept to keep in mind is that boxes can have multiple labels.</p>
+                </div>
+
+                <div class="content-detail">
+
+                    <h4>Box Sizing</h4>
+
+                    <p>HTML elements are boxes and each element has 4 components ilustrated below:</p>
+
+                    <div class="graphic">
+
+                        <img src="images/boxmodel-image.png" alt="Box Model Image" width="250">
+                    </div>
+
+                    <p>In the center of the box, we have the <span class="bold">content</span> (pink), which can contain text or an image. The area surrounding the content is the <span class="bold">padding</span> (blue), which clears the area around the content. Next, we have the <span class="bold">border</span> (green), which goes around the area of the padding and the content, and it's inherited from the color property of the box. Lastly, we have the <span class="bold">margin</span> (grey), which clears the area around the border; the margin does not have a color and is completely transparent (space between boxes). </p>
+
+                    <p>By default, the size of your element is equal to the sum of the border, padding and content width. This makes it a bit difficult to determine the size of an element, especially if we continue to change its parameters.</p>
+
+                    <p>There are 2 techniques you can use to deal with sizing issues:</p>
+                        <ul>
+                            <li>Set sizes in terms of percentages (%) rather than pixels</li>
+
+                            <li>Use the CSS style attribute <span class="italic">box-sizing:border box</span> that makes the calculation of the element size including the border and padding, making it easier to make layouts. Using this style, you can just set the width of the overall box, so no matter how much you tweak the padding or border, the size of the box will always stay the same.</li>
+                        </ul>
+
+                    <p>One drawback with the box model is that having been developed more recently, it is not necesarily compatible with all browsers. This means you need to add browser-specific prefixes so that older browsers are still able to display the element correctly. The prefixes are: <span class="italic">-webkit</span>, <span class="italic">-moz</span>, and <span class="italic">-ms</span>, and they can be easily added in front of the style definition above.</p>
+
+                </div>
+
+
+                <div class="content-detail">
+                    <h4>Box Positioning</h4>
+
+                    <p>Since divs are <span class="bold">block</span> elements (as opposed to <span class="bold">inline</span>), they take up the entire width of the page by default.</p>
+
+                    <p>Adding the rule <span class="italic">display:flex;</span> to the appropriate CSS will override this behavior and let divs appear next to each other.</p>
+
+                </div>
+            </div>
+
+            <div class="content-category">
+
+                <h3>Document Object Model</h3>
+
+                <div class="content-detail">
+
+                    <h4>DOM</h4>
+
+                    <p>Document Object Model (DOM) is a language-independent convention for representing and interacting with objects in HTML and other languages.</p>
+
+                    <p>Markup language documents are organized in a tree structure, called the DOM tree.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p><a class="top-link" href="#top">Back to top</a></p>
+
+        <hr/>
+
+            <div class="content">
+
+                <h2 class="content-title" id="http">5. HTTP</h2>
+
+                <div class="content-description">
+
+                    <p>The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web.</p>
+
+                    <p>The internet uses HTTP to communicate with you, your browser and servers.</p>
+                </div>
+
+            </div>
+
+            <p><a class="top-link" href="#top">Back to top</a></p>
+
+    </body>
+</html>
+
+    
+
